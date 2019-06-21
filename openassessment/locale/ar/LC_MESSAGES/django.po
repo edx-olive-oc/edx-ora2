@@ -214,6 +214,18 @@ msgid ""
 "learners."
 msgstr "حدّد عدد الردود الحاصلة على أعلى درجات لعرضها. تتراوح قيم الأعداد الصالحة بين 0 و99. فإذا كان عددها 0، فلن يجري إظهار قسم ’أفضل الردود‘ للمتعلّمين."
 
+#: openassessment/templates/openassessmentblock/edit/oa_edit.html:185
+msgid ""
+"In this assignment, you can include learner training, peer assessment, self "
+"assessment, example based assessment, and staff assessment steps. Select the"
+" steps that you want below, and then drag them into the order you want. If "
+"you include an example based assessment step, it must precede all other "
+"steps. If you include a learner training step, it must precede peer and self"
+" assessment steps. If you include a staff assessment step, it must be the "
+"final step. After you release an ORA assignment, you cannot change the type "
+"and number of assessment steps."
+msgstr "يمكنك في هذا الواجب تضمين خطوات تتيح تدريب المتعلمين، وتقييم الزملاء، والتقييم الذاتي، والتقييم القائم على الأمثلة وتقييم الطاقم. اختر الخطوات التي تريدها أدناه، ثمّ اسحبها بالترتيب الذي تريده. وإذا ضمّنتَ خطوة ’تقييم قائم على الأمثلة‘، فيجب أن تسبق الخطوات الأخرى جميعها. أمّا إذا ضمّنتَ خطوة ’تقييم الطاقم‘، فلا بدّ أن تكون هي الخطوة الأخيرة. لا يمكنك تغيير نوع أو عدد خطوات التقييم بعد نشر واجب ذا إجابات مفتوحة."
+
 #: openassessment/templates/openassessmentblock/edit/oa_edit.html:184
 msgid ""
 "In this assignment, you can include learner training, peer assessment, self "
@@ -287,6 +299,16 @@ msgid ""
 "Select one of the options above. This describes whether or not the learner "
 "will have to provide criterion feedback."
 msgstr "اختر أحد الخيارات المبيّنة أعلاه، يحدّد ذلك إذا كان على المتعلّم الإدلاء برأيه بشأن المعيار أم لا."
+
+#: openassessment/templates/openassessmentblock/edit/oa_edit_example_based_assessment.html:8
+msgid "Step: Example-Based Assessment"
+msgstr "الخطوة: التقييم المبني على الأمثلة"
+
+#: openassessment/templates/openassessmentblock/edit/oa_edit_example_based_assessment.html:12
+msgid ""
+"An algorithm assesses learners' responses by comparing the responses to pre-"
+"assessed sample responses that the instructor provides."
+msgstr "تقيّيم الخوارزمية ردود المتعلّمين وفقًا لعملية مقارنة بين الردود ونماذج ردود مقيّمة مسبقًا يوفّرها موجّه المساق."
 
 #: openassessment/templates/openassessmentblock/edit/oa_edit_option.html:5
 msgid "Option"
@@ -907,7 +929,7 @@ msgid ""
 "\n"
 "                    In Progress (%(review_number)s of %(num_must_grade)s)\n"
 "                "
-msgstr ""
+msgstr "\nجار التقييم (%(review_number)s من %(num_must_grade)s)\n                    "
 
 #: openassessment/templates/openassessmentblock/peer/oa_peer_assessment.html:65
 #: openassessment/templates/openassessmentblock/peer/oa_peer_turbo_mode.html:45
@@ -1271,6 +1293,46 @@ msgstr "يُرجى إدخال اسم متعلّم مستقل أو عنوان ب�
 msgid "Submit"
 msgstr "تقديم"
 
+#: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:40
+msgid "Classifier set"
+msgstr "مجموعة التصنيفات"
+
+#: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:42
+msgid "Field"
+msgstr "حقل"
+
+#: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:43
+msgid "Value"
+msgstr "قيمة"
+
+#: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:47
+msgid "Created at"
+msgstr "أُنشئ في"
+
+ #: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:51
+msgid "Algorithm ID"
+msgstr "الرقم التعريفي للخوارزمية"
+
+#: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:55
+msgid "Course ID"
+msgstr "رقم المساق "
+
+#: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:59
+msgid "Item ID"
+msgstr "الرقم التعريفي للعنصر"
+
+#: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:65
+msgid "No classifiers are available for this problem"
+msgstr "لا يوجد تصنيفات لهذه المسألة"
+
+#: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:70
+msgid "Schedule Example-Based Assessment Training"
+msgstr "حدّد موعدًا للتدريب على التقييم القائم على الأمثلة"
+
+#: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:77
+msgid "Reschedule All Unfinished Example-Based Assessment Grading Tasks"
+msgstr "إعادة جدولة جميع مهامّ التقييم غير المنتهية للتقييم القائم على الأمثلة"
+
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:51
 msgid "Response total"
 msgstr "مجموع الردود"
@@ -1410,6 +1472,10 @@ msgid "Learner's Self Assessment"
 msgstr "التقييم الذاتي الخاص بالمتعلّم"
 
 #: openassessment/templates/openassessmentblock/staff_area/oa_student_info.html:72
+msgid "Example-Based Assessment"
+msgstr "التقييم القائم على الأمثلة"
+
+#: openassessment/templates/openassessmentblock/staff_area/oa_student_info.html:77
 msgid "Staff Assessment for This Learner"
 msgstr "تقييم طاقم المساق لهذا المتعلّم"
 
@@ -1537,7 +1603,7 @@ msgid ""
 "\n"
 "                      In Progress (%(current_progress_num)s of %(training_available_num)s)\n"
 "                  "
-msgstr ""
+msgstr "\nجار معالجة (%(current_progress_num)s  من %(training_available_num)s)"
 
 #. Translators: This string displays a date to the user, then tells them the
 #. time until that date.  Example: "available August 13th, 2014 (in 5 days and
@@ -1681,6 +1747,14 @@ msgstr "الزميل {peer_index}"
 msgid "Peer Comments"
 msgstr "ملاحظات الزملاء"
 
+#: openassessment/xblock/grade_mixin.py:368
+msgid "Example-Based Grade"
+msgstr "الدرجة المُعتمدة على الأمثلة"
+
+#: openassessment/xblock/grade_mixin.py:368
+msgid "Example-Based Comments"
+msgstr "ملاحظات مبنية على الأمثلة"
+
 #: openassessment/xblock/grade_mixin.py:372
 msgid "Self Assessment Grade"
 msgstr "درجة التقييم الذاتي"
@@ -1799,6 +1873,20 @@ msgstr "عذرًا، ليست لديك صلاحية الوصول إلى معلو
 msgid "You do not have permission to access ORA staff grading."
 msgstr "عذرًا، ليست لديك صلاحية الوصول إلى صفحة طاقم \"اسئلة الإجابات المفتوحة\" للمساق."
 
+#: openassessment/xblock/staff_area_mixin.py:212
+#, python-brace-format
+msgid "Training scheduled with new Workflow UUID: {uuid}"
+msgstr "جرت جدولة التدريب مع أسلوب سير عمل جديد UUID: {uuid}"
+
+#: openassessment/xblock/staff_area_mixin.py:217
+#, python-brace-format
+msgid "An error occurred scheduling classifier training: {error}"
+msgstr "نأسف لحدوث خطأ أثناء جدولة التدريب على أداة التصنيف: {error}"
+
+#: openassessment/xblock/staff_area_mixin.py:223
+msgid "Example Based Assessment is not configured for this location."
+msgstr "لم يجرِ ضبط إعدادات التقييم القائم على الأمثلة بالنسبة لهذا الموقع."
+
 #: openassessment/xblock/staff_area_mixin.py:178
 msgid "Error getting learner information."
 msgstr "حدث خطأ أثناء الحصول على معلومات المتعلّم"
@@ -1818,6 +1906,15 @@ msgstr "حدث خطأ في تلقّي معلومات درجات طاقم الم�
 #: openassessment/xblock/staff_area_mixin.py:244
 msgid "Error getting staff grade ungraded and checked out counts."
 msgstr "حدث خطأ أثناء جلب أعداد الردود قيد التصحيح والردود غير المصحّحة بعد، ليتمكن طاقم المساق من المباشرة بعملية التصحيح."
+
+#: openassessment/xblock/staff_area_mixin.py:494
+msgid ""
+"All AI tasks associated with this item have been rescheduled successfully."
+msgstr "نجحت إعادة جدولة جميع المهامّ المرتبطة بهذا العنصر."
+
+#: openassessment/xblock/staff_area_mixin.py:499
+msgid "An error occurred while rescheduling tasks: {}"
+msgstr "نأسف لحدوث خطأ أثناء إعادة جدولة المهامّ: {}"
 
 #: openassessment/xblock/staff_area_mixin.py:454
 msgid "Please enter valid reason to remove the submission."
@@ -1893,6 +1990,17 @@ msgid ""
 "Error: in case if file upload response is disabled text response must be "
 "required"
 msgstr ""
+
+#: openassessment/xblock/studio_mixin.py:229
+msgid ""
+"Validation error: There was an error in the XML definition of the examples "
+"provided by the user. Please correct the XML definition before saving."
+msgstr "خطأ في التحقّق: نأسف لحدوث خطأ في تعريف XML للأمثلة المحدّدة من قبل المستخدم. يُرجى تصحيح تعريف XML قبل الحفظ."
+
+#: openassessment/xblock/studio_mixin.py:234
+msgid ""
+"Validation error: No examples were provided for example based assessment."
+msgstr "خطأ في التحقّق: لم تُحدّد أي أمثلة للتقييم القائم على الأمثلة."
 
 #: openassessment/xblock/studio_mixin.py:227
 #, python-brace-format
@@ -1997,6 +2105,10 @@ msgstr "يجب أن تحدّد ردًّا واحدًا على الأقل كمث�
 msgid "Each example response for learner training must be unique."
 msgstr "يجب أن يكون كل ردّ، معتمد كمثال لتدريب المتعلّمين، فريدًا من نوعه."
 
+#: openassessment/xblock/validation.py:161
+msgid "The \"algorithm_id\" value must be set to \"ease\" or \"fake\""
+msgstr "يجب تحديد قيمة الرقم التعريفي للخوارزمية \"algorithm_id\" على أنّها \"سلسة\" أو \"وهمية\". "
+
 #: openassessment/xblock/validation.py:156
 msgid "The \"required\" value must be true if staff assessment is the only step."
 msgstr "يجب أن تكون القيمة ’مطلوبة‘ صحيحة في حال كان تقييم طاقم المساق مؤلفًا من خطوة واحدة فقط."
@@ -2025,6 +2137,10 @@ msgstr "تحتوي الخيارات في المعيار ’{criterion}‘ على
 msgid "Criteria with no options must require written feedback."
 msgstr "يجب على المعايير التي لا تتضمّن خيارات أن تتطلّب آراء وملاحظات خطّية."
 
+#: openassessment/xblock/validation.py:223
+msgid "Example-based assessments cannot have duplicate point values."
+msgstr "لا يمكن للأمثلة القائمة على التقييم أن يكون لها قيم مزدوجة. "
+
 #: openassessment/xblock/validation.py:211
 msgid "Prompts cannot be created or deleted after a problem is released."
 msgstr "لا يمكن خلق علامة استعداد أو حذفها بعد أن تكون المسألة قد نُشِرَت."
@@ -2044,6 +2160,12 @@ msgstr "لا يمكن تغيير عدد الخيارات بعد أن تكون ا
 #: openassessment/xblock/validation.py:238
 msgid "Point values cannot be changed after a problem is released."
 msgstr "لا يمكن تغيير قيم الدرجة بعد أن تكون المسألة قد أُصدرت."
+
+#: openassessment/xblock/validation.py:310
+msgid ""
+"Learner training and example-based assessments must have at least one "
+"training example."
+msgstr "يجب أن يتضمّن كل من قسم تدريب المتعلّمين وقسم التقييمات القائمة على الأمثلة على مثال تدريبيّ واحد على الأقلّ."
 
 #: openassessment/xblock/validation.py:289
 msgid "Learner training must have at least one training example."
