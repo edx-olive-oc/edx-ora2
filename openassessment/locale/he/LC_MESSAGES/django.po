@@ -127,7 +127,7 @@ msgstr "התאריך והשעה שבהם התלמידים אינם יכולים 
 
 #: openassessment/templates/openassessmentblock/edit/oa_edit.html:106
 msgid "Text Response"
-msgstr ""
+msgstr "תגובה בטקסט"
 
 #: openassessment/templates/openassessmentblock/edit/oa_edit.html:114
 msgid ""
@@ -838,7 +838,8 @@ msgid ""
 "\n"
 "                    This assignment has several steps. In the first step, you'll provide a response to the prompt. The other steps appear below the %(start_tag)sYour Response%(end_tag)s field.\n"
 "                "
-msgstr ""
+msgstr "\n"
+"במטלה זו קיימים מספר שלבים. בשלב הראשון, תידרש לספק תשובה עבור השאלה. השלבים האחרים מופיעים מתחת %(start_tag)s לשדה תשובתך %(end_tag)s."
 
 #: openassessment/templates/openassessmentblock/message/oa_message_unavailable.html:4
 msgid "Instructions Unavailable"
@@ -1082,11 +1083,11 @@ msgstr "ההנחיה לסעיף זה"
 
 #: openassessment/templates/openassessmentblock/response/oa_response.html:92
 msgid "Your response (required)"
-msgstr ""
+msgstr "התגובה שלך (שדה חובה)"
 
 #: openassessment/templates/openassessmentblock/response/oa_response.html:94
 msgid "Your response (optional)"
-msgstr ""
+msgstr "התגובה שלך (לא חובה)"
 
 #: openassessment/templates/openassessmentblock/response/oa_response.html:104
 msgid "Enter your response to the prompt above."
